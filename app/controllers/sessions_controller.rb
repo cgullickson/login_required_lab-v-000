@@ -14,6 +14,7 @@ class SessionsController < ApplicationController
   def destroy
     unless !session[:name]
       session.destroy
+    end
   end
 
 end
