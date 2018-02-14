@@ -54,8 +54,8 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
   root 'application#welcome'
-  get '/login' => 'sessions#new'
+  get '/sessions/new' => 'sessions#new'
   get '/show' => 'secrets#show'
-  post '/login' => 'sessions#create'
+  post '/sessions/new' => 'sessions#create'
   post '/logout' => 'sessions#destroy'
 end
